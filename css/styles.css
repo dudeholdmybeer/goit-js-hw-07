@@ -37,8 +37,15 @@
   display: block;
   text-decoration: none;
   height: 100%;
+
 }
 
 .gallery__link:hover {
   cursor: zoom-in;
+}
+
+.modal {
+  background-color: #fff;
+padding: 20px;
+border-radius: 15px;
 }
