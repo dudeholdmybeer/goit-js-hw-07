@@ -3,7 +3,7 @@ import { galleryItems } from "./gallery-items.js";
 
 const galleryTemplate = ({ preview, original, description }) => `
     <a class="gallery__item" href="${original}">
-        <img class="gallery__image" src="${preview}" title="${description}" alt="${description}"/>
+        <img class="gallery__image" src="${preview}" alt="${description}"/>
     </a>`;
 
 const refs = {
@@ -22,6 +22,7 @@ const galleryRender = () => {
 galleryRender();
 
 new SimpleLightbox(".gallery a", {
+  captionsData: "alt",
   captionDelay: 250,
 });
 
